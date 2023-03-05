@@ -16,7 +16,11 @@ public interface AppRepository<T extends Entity> extends Repository<T, ObjectId>
 
     T save(T entity);
 
+    Streamable<T> saveAll(Iterable<T> entities);
+
     void delete(T entity);
+
+    void deleteAll();
 
     void deleteById(ObjectId id);
 
