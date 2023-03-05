@@ -1,0 +1,12 @@
+spring:
+    profiles:
+        active:
+            - local
+    data:
+        mongodb:
+            username: root
+            password: root
+            database: strategy
+logging:
+    file:
+        name: log/application.log
