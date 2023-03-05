@@ -10,6 +10,8 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 @Data
 public class Entity {
+
     @Id
-    private ObjectId id;
+    protected ObjectId id;
+
 }
